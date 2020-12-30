@@ -1,0 +1,47 @@
+.content {
+  margin: 0 40px;
+}
+
+#wrap {
+  position: relative;
+  background-color: azure;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.box {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+/* 要素のスタイルを指定 */
+.slideConts {
+  width: 500px;
+  height: 400px;
+  transition: all 1.5s; /* 変化時間を指定する */
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+
+.slideContsL {
+  opacity: 0;
+  background-color: aqua;
+  transform: translate(-800px, 0); /* x軸上、左へ */
+}
+
+.slideContsR {
+  opacity: 1;
+  background-color: rgb(255, 0, 234);
+  transform: translate(800px, 0); /* y軸上、右へ */
+}
+
+.slideContsL.show {
+  opacity: 1;
+  transform: translate(-50px, 0) !important; /* x軸上、左へ */
+}
+
+.slideContsR.show {
+  opacity: 1;
+  transform: translate(350px, 0) !important; /* x軸上、左へ */
+}
